@@ -1,8 +1,28 @@
 import './styles/App.scss';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+/*********/
+/*       */
+/* PAGES */
+import Home from './pages/Home/';
+import About from './pages/About/';
+import Error from './pages/Error/';
+import Listings from './pages/Listings/';
+/**************/
+/*            */
+/* COMPONENTS */
+import Header from './components/Header/'
 
 function App() {
   return (
-    <h1>Hello World</h1>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} /> {/* First Page */}
+        <Route path="/About" element={<About />} />
+        <Route path="*" element={<Error />} /> {/* Catch them all -- wrong URL go to 404 */}
+        <Route path="/Listings" element={<Listings />} />
+      </Routes>
+    </Router>
   );
 }
 
