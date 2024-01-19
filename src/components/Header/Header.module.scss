@@ -1,0 +1,30 @@
+@import '../../styles/utilities.scss';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5%;
+    &_main_logo {
+        width: 50%;
+        & img {
+            width: 145px;
+            display: flex;
+            align-items: center;
+        }
+    }
+    & nav {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: $smallsize;
+        margin-right: 0.5rem;
+        & .navLink {
+            text-decoration: none;
+            color: $primarycolor;            
+            &.selected {
+                text-decoration: underline;
+            }
+        }
+    }
+}

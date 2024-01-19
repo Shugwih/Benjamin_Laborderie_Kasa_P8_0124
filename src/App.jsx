@@ -19,8 +19,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} /> {/* First Page */}
         <Route path="/About" element={<About />} />
-        <Route path="*" element={<Error />} /> {/* Catch them all -- wrong URL go to 404 */}
         <Route path="/Listings" element={<Listings />} />
+        <Route path="*" element={<Error />} /> {/* Catch them all -- wrong URL go to 404 */}
       </Routes>
     </Router>
   );
