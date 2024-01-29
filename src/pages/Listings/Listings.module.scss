@@ -1,0 +1,38 @@
+@import '../../styles/utilities.scss';
+
+.listings {
+    margin: 1rem;
+    & img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    @for $i from 1 through 2 {
+        h#{$i} {
+            color: $primarycolor;
+            font-weight: $medium-weight;
+        }
+    }
+    & h1 {
+        font-size: $h1-listing-mobile;
+    }
+    & h2 {
+        font-size: $h2-listing-mobile;
+    }
+    & ul {
+        list-style-type: none;
+        padding: 0;
+        color: $light-color;
+        display: flex;
+        font-size: $p-tag-listing-mobile;
+        gap: 10px;
+        & li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $primarycolor;
+            border-radius: 10px;
+            width: 84px;
+            height: 18px;
+        }
+    }
+}

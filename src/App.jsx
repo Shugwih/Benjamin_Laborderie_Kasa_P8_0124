@@ -1,4 +1,3 @@
-import './styles/App.scss';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 /*********/
 /*       */
@@ -11,6 +10,7 @@ import Listings from './pages/Listings/';
 /*            */
 /* COMPONENTS */
 import Header from './components/Header/'
+import Footer from './components/Footer/'
 
 function App() {
   return (
@@ -18,10 +18,11 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} /> {/* First Page */}
-        <Route path="/About" element={<About />} />
-        <Route path="/Listings" element={<Listings />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/listings/:id" element={<Listings />} />
         <Route path="*" element={<Error />} /> {/* Catch them all -- wrong URL go to 404 */}
       </Routes>
+      <Footer />
     </Router>
   );
 }

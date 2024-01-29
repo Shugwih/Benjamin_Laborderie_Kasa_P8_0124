@@ -1,0 +1,7 @@
+.home { /*Style for div (Card container), for card component, go to : Card/Card.module.scss*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+}

@@ -1,7 +1,7 @@
 import styles from './Header.module.scss'
 import { Link, useLocation } from 'react-router-dom'
 import logo from '../../Assets/Main_logo.svg'
- 
+
 function Header() {
     
     /* Get the Navigation link path to apply scss when active */
@@ -17,9 +17,10 @@ function Header() {
             <div className={styles.header_main_logo}>
                 <img src={logo} alt='Kasa - Logo'></img>
             </div>
+
             <nav>
-                <Link to="/" className={getLinkClassName('/')}>Accueil</Link>
-                <Link to="/About" className={getLinkClassName('/About')}>À propos</Link>
+                <Link to="/" className={getLinkClassName('/')}>ACCUEIL</Link>
+                <Link to="/About" className={getLinkClassName('/About')}>À PROPOS</Link>
             </nav>
         </header>    
     )

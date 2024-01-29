@@ -1,10 +1,15 @@
 /*---------COLOR---------*/
-$primarycolor : #FF6060;
+$primarycolor: #FF6060;
+$light-color: white;
 /*                       */
 /*-----------------------*/
 
 /*-------FONTSIZE--------*/
-$smallsize : 12px; /*For Nav menu - Header*/
+$smallsize: 0.75rem; /*For Nav menu - Header - Mobile version*/
+$h1-home-mobile: 1.5rem; /*For home h1 - Mobile version*/
+$h1-listing-mobile: 1.125rem; /*For listing h1 title - Mobile version*/
+$h2-listing-mobile: 0.875rem; /*For listing h2 location - Mobile version*/
+$p-tag-listing-mobile: 0.625rem; /*For listing <p /> tag - Mobile version*/
 /*                       */
 /*-----------------------*/
 
@@ -18,7 +23,8 @@ $black-weight: 900;
 /*-----------------------*/
 
 /*---------FONT----------*/
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap');
+$primaryfont: 'Monserrat' ,sans-serif;
 /*                       */
 /*-----------------------*/
 

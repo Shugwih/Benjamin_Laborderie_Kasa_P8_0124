@@ -1,0 +1,25 @@
+@import '../../styles/utilities.scss';
+/*For the style of div (Card container) go to : pages/Home/Home.module.scss*/
+.card {
+    max-width: 340px;
+    height: 255px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    & img {
+        object-fit: cover;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    & h3 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: $light-color;
+        font-weight: $medium-weight;
+        width: 50%;
+        margin: 0 0 0.7rem 1rem;
+        text-shadow: 1px 1px 0px gray;
+    }
+}
+

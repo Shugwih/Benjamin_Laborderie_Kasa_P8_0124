@@ -1,0 +1,16 @@
+@import '../../styles/utilities.scss';
+
+.footer {
+    height: 209px;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    & img {
+        justify-content: center;
+    }
+    & p {
+        color: $light-color;
+    }
+}
