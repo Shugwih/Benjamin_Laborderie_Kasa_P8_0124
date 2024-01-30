@@ -6,7 +6,7 @@
         max-width: 100%;
         border-radius: 10px;
     }
-    @for $i from 1 through 2 {
+    @for $i from 1 through 3 {
         h#{$i} {
             color: $primarycolor;
             font-weight: $medium-weight;
@@ -17,22 +17,55 @@
     }
     & h2 {
         font-size: $h2-listing-mobile;
-    }
-    & ul {
-        list-style-type: none;
-        padding: 0;
-        color: $light-color;
-        display: flex;
-        font-size: $p-tag-listing-mobile;
-        gap: 10px;
-        & li {
+        + ul {
+            list-style-type: none;
+            padding: 0;
+            color: $light-color;
             display: flex;
-            justify-content: center;
+            font-size: $p-tag-listing-mobile;
+            gap: 10px;
+            & li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $primarycolor;
+                border-radius: 10px;
+                width: 84px;
+                height: 18px;
+            }
+        }
+    }
+    & h3 {
+        font-size: $h3-listing-mobile;
+        max-width: 3.125rem;
+        text-align: right;
+        + img {
+            width: 33px;
+            height: 33px;
+            border-radius: 50%;
+            margin-left: 0.5rem;
+        }
+    }
+    
+    & .host_rating_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & .host_container {
+            display: flex;
             align-items: center;
-            background-color: $primarycolor;
+            & svg {
+                margin-left: 10px;
+            }
+        }
+    }
+    & .collapse_container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        & .collapse_element {
+            background-color: $grey;
             border-radius: 10px;
-            width: 84px;
-            height: 18px;
         }
     }
 }

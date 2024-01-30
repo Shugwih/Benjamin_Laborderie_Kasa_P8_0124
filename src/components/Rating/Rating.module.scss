@@ -1,0 +1,10 @@
+@import '../../styles/utilities.scss';
+
+.rating {
+    & .fullStar {
+        color: $primarycolor;
+    }
+    & .emptyStar {
+        color: $light-grey;
+    }
+}

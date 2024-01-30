@@ -6,4 +6,13 @@
 
 body {
   margin: auto;
+  cursor: default; /*Prevent cursor: text*/
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
 }

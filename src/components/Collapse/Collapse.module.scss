@@ -1,0 +1,27 @@
+@import '../../styles/utilities.scss';
+
+.collapse {
+    & .collapseButton {
+        background-color: $primarycolor;
+        color: $light-color;
+        height: 1.875rem;
+        border-radius: 10px;
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0.5rem;
+        & span {
+            cursor: pointer;
+        }
+    }
+    & ul, p {
+        list-style-type: none;
+        padding: 20px 19px;
+    }
+    & p, li {
+        font-size: 0.75rem;
+        color: $primarycolor;
+        line-height: 1.47;
+    }
+}
