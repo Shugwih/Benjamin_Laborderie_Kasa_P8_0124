@@ -1,0 +1,29 @@
+@import '../../styles/utilities.scss';
+
+.Error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $primarycolor;
+    & h1 {
+        font-size: $h1-error-mobile;
+    }
+    & h2 {
+        text-align: center;
+        font-size: $h2-error-mobile;
+        & .breack::after {
+            content: '';
+            display: block;
+        }
+    }
+    @for $i from 1 through 2 {
+        h#{$i} {
+            margin: 3.5rem 0;
+        }
+      }
+    & .errorToHomeLink {
+        color: $primarycolor;
+        margin: 3.5rem 0 7rem 0;
+        display: flex;
+    }
+}

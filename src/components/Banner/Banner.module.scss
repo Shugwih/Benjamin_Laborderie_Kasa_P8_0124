@@ -1,7 +1,7 @@
 @import '../../styles/utilities.scss';
 
 .banner {
-    max-width: 340px;
+    max-width: 100%; /*340px*/
     margin: 1rem;
     display: flex;
     justify-content: center;
@@ -22,7 +22,7 @@
         width: 335px;
         height: 111px;
         right: 6%;
-        bottom: 34%;
+        top: 6%;
         position: relative;
         object-fit: cover;
         border-radius: 10px;
@@ -30,8 +30,8 @@
         }
     h1 {
         position: absolute;
-        top: 35%;
-        left: 36%;
+        top: 50%;
+        left: 45%;
         transform: translate(-50%, -50%);
         font-size: $h1-home-mobile;
         font-weight: $medium-weight;

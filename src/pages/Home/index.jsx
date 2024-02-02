@@ -8,9 +8,9 @@ import styles from './Home.module.scss';
 function Home() {
 
     return (
-        <div>
+        <div className={styles.home}>
             <Banner backgroundImage={Homebanner} bannerText="Chez vous, partout et ailleurs" />
-            <div className={styles.home}>
+            <div className={styles.home_gallery}>
                 {data.map((item) => (
                     <Card key={item.id} id={item.id} title={item.title} cover={item.cover}/>
                 ))}

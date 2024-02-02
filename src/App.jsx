@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 /*********/
 /*       */
 /* PAGES */
@@ -20,7 +20,8 @@ function App() {
         <Route path="/" element={<Home />} /> {/* First Page */}
         <Route path="/about" element={<About />} />
         <Route path="/listings/:id" element={<Listings />} />
-        <Route path="*" element={<Error />} /> {/* Catch them all -- wrong URL go to 404 */}
+        <Route path="/error" element={<Error />} />
+        <Route path="*" element={<Navigate replace to="/error" />} /> {/* Catch them all -- wrong URL go to 404 */}
       </Routes>
       <Footer />
     </Router>

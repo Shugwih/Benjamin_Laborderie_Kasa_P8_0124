@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import data from '../../data/logements.json';
 import styles from './Listings.module.scss'
 import Rating from '../../components/Rating/'
@@ -8,6 +8,14 @@ import Collapse from '../../components/Collapse/'
 function Listings() {
     const { id } =useParams();
     const listing = data.find(item => item.id === id);
+    const navigate = useNavigate();
+
+    React.useEffect(() => {
+        if (!listing) {
+            navigate('/error'); // Assurez-vous d'avoir une route définie pour '/error' ou utilisez '*' pour rediriger vers la page d'erreur 404.
+        }
+    }, [listing, navigate]);
+
     return (
         <div className={styles.listings}>
         {listing && (
@@ -34,15 +42,15 @@ function Listings() {
                         </Collapse>
                     </div>
                     <div className={styles.collapse_element}>
-                    <Collapse title="Équipements">
-                        <div className={styles.equipements_list}>
-                            <ul>
-                                {listing.equipments.map((equipment, index) => (
-                                    <li key={index}>{equipment}</li> 
-                                ))}
-                            </ul>
-                        </div>
-                    </Collapse>
+                        <Collapse title="Équipements">
+                            <div className={styles.equipements_list}>
+                                <ul>
+                                    {listing.equipments.map((equipment, index) => (
+                                        <li key={index}>{equipment}</li> 
+                                    ))}
+                                </ul>
+                            </div>
+                        </Collapse>
                     </div>
                 </div>
             </div>
