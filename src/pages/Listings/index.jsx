@@ -20,20 +20,24 @@ function Listings() {
     return (
         <div className={styles.listings}>
         {listing && (
-            <div>
+            <div className={styles.listings_main_container}>
                 <Slideshow images={listing.pictures} />
-                <h1>{listing.title}</h1>
-                <h2>{listing.location}</h2>
-                <ul>
-                    {listing.tags.map((tag, index) => (
-                        <li key={index}>{tag}</li>
-                    ))}
-                </ul>
-                <div className={styles.host_rating_container}>
-                    <Rating rating={listing.rating} />
-                    <div className={styles.host_container}>
-                        <h3>{listing.host.name}</h3>
-                        <img src={listing.host.picture} alt={listing.host.name} />
+                <div className={styles.container_for_flex}>
+                    <div className={styles.description_container}>
+                        <h1>{listing.title}</h1>
+                        <h2>{listing.location}</h2>
+                        <ul>
+                            {listing.tags.map((tag, index) => (
+                                <li key={index}>{tag}</li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div className={styles.host_rating_container}>
+                        <Rating rating={listing.rating} />
+                        <div className={styles.host_container}>
+                            <h3>{listing.host.name}</h3>
+                            <img src={listing.host.picture} alt={listing.host.name} />
+                        </div>
                     </div>
                 </div>
                 <div className={styles.collapse_container}>
