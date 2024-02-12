@@ -1,13 +1,39 @@
+@import '../../styles/utilities.scss';
+
 .home {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    & .home_gallery { /*Style for div (Card container), for card component, go to : Card/Card.module.scss*/
+    flex-direction: column;
+    max-width: 425px;
+    margin: auto;
+    @media (min-width: $medium-device-min) {
+        max-width: 1240px;
+    }
+    & .home_gallery_container {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
-        margin: 1rem;
+        align-items: center;
+        margin: 2.688rem  0 3.125rem 0;
+        padding: 1rem;
+        @media (min-width: $medium-device-min) {
+            background-color: $grey;
+            border-radius: 10px;
+            margin: 2.688rem 1rem 3.125rem 1rem;
+        }
+        & .home_gallery { /*Style for div (Card container), for card component, go to : Card/Card.module.scss*/
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1rem;
+            margin: auto;
+            @media (min-width: $medium-device-min) {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                align-items: center;
+                justify-content: center;
+                margin: 2.125rem auto 1.688rem auto;
+            }
+        }
     }
 }
+
+
 

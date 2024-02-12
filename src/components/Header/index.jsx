@@ -14,14 +14,16 @@ function Header() {
 
     return (
         <header className={styles.header}>
-            <div className={styles.header_main_logo}>
-                <img src={logo} alt='Kasa - Logo'></img>
-            </div>
+            <div className={styles.top_container}>
+                <div className={styles.top_container_main_logo}>
+                    <img src={logo} alt='Kasa - Logo'></img>
+                </div>
 
-            <nav>
-                <Link to="/" className={getLinkClassName('/')}>ACCUEIL</Link>
-                <Link to="/About" className={getLinkClassName('/About')}>À PROPOS</Link>
-            </nav>
+                <nav>
+                    <Link to="/" className={getLinkClassName('/')}>ACCUEIL</Link>
+                    <Link to="/About" className={getLinkClassName('/About')}>À PROPOS</Link>
+                </nav>
+            </div>
         </header>    
     )
 }

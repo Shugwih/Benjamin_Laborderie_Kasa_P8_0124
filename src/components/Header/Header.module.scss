@@ -1,28 +1,41 @@
 @import '../../styles/utilities.scss';
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1rem;
-    &_main_logo {
-        width: 50%;
-        & img {
-            width: 145px;
-            display: flex;
-            align-items: center;
-        }
-    }
-    & nav {
+    @media (min-width: $medium-device-min) {
         display: flex;
-        gap: 0.5rem;
-        font-size: $smallsize;
-        margin-top: 0.7rem;
-        & .navLink {
-            text-decoration: none;
-            color: $primarycolor;            
-            &.selected {
-                text-decoration: underline;
+        justify-content: center;
+    }
+    & .top_container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 1rem;
+        @media (min-width: $medium-device-min) {
+            justify-content: space-between;
+            width: 1240px;
+        }
+        &_main_logo {
+            & img {
+                width: 145px;
+                display: flex;
+                align-items: center;
+            }
+        }
+        & nav {
+            display: flex;
+            gap: 0.5rem;
+            font-size: $smallsize;
+            margin-top: 0.7rem;
+            @media (min-width: $medium-device-min) {
+                font-size: $navSize;
+                gap: 3.563rem;
+            }
+            & .navLink {
+                text-decoration: none;
+                color: $primarycolor;            
+                &.selected {
+                    text-decoration: underline;
+                }
             }
         }
     }

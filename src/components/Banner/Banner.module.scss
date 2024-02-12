@@ -8,6 +8,12 @@
     position: relative; /*For text*/
     overflow: hidden;
     border-radius: 10px;
+        @media (min-width: $medium-device-min) {
+            margin: 3.125rem 1rem 0 1rem;
+        }
+        @media (min-width: $large-device) {
+            //margin: 100px 50px 43px 100px;
+        }
     &::before { /*Background Opacity*/
         content: '';
         position: absolute;
@@ -27,15 +33,30 @@
         object-fit: cover;
         border-radius: 10px;
         transform: scale(1.7); 
+            @media (min-width: $medium-device-min) {
+                right: 0;
+                top: 0;
+                transform: none;
+                width: 1240px;
+                height: 223px;
+            }
         }
     h1 {
         position: absolute;
         top: 50%;
-        left: 45%;
+        left: 50%;
         transform: translate(-50%, -50%);
         font-size: $h1-home-mobile;
         font-weight: $medium-weight;
         color: $light-color;
         width: 12.25rem; /*just for line break style without jsx modification*/
+            @media (min-width: $medium-device-min) {
+                text-align: center;
+                font-size: $h1-home-medium;
+                width: 100%;
+            }
+            @media (min-width: $large-device) {
+                font-size: $h1-home;
+            }
     }
 }

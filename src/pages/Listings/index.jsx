@@ -4,6 +4,7 @@ import data from '../../data/logements.json';
 import styles from './Listings.module.scss'
 import Rating from '../../components/Rating/'
 import Collapse from '../../components/Collapse/'
+import Slideshow from '../../components/Slideshow';
 
 function Listings() {
     const { id } =useParams();
@@ -12,7 +13,7 @@ function Listings() {
 
     React.useEffect(() => {
         if (!listing) {
-            navigate('/error'); // Assurez-vous d'avoir une route définie pour '/error' ou utilisez '*' pour rediriger vers la page d'erreur 404.
+            navigate('/error');
         }
     }, [listing, navigate]);
 
@@ -20,7 +21,7 @@ function Listings() {
         <div className={styles.listings}>
         {listing && (
             <div>
-                <img src={listing.cover} alt={listing.title} />
+                <Slideshow images={listing.pictures} />
                 <h1>{listing.title}</h1>
                 <h2>{listing.location}</h2>
                 <ul>

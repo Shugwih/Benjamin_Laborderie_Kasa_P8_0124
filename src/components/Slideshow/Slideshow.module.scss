@@ -1,1 +1,45 @@
 @import '../../styles/utilities.scss';
+
+.slideshow {
+    position: relative; 
+    width: 100%;
+    max-width: 600px; 
+    margin: auto;
+    & .slideImage {
+      width: 335px;
+      height: 255px; 
+      object-fit: cover; 
+      display: block; 
+      margin: 0 auto;
+    }
+    & .navButton {
+      position: absolute; 
+      top: 50%; 
+      transform: translateY(-50%); 
+      background: none; 
+      border: none; 
+      cursor: pointer;
+      color: white; 
+      font-size: 24px; 
+      &:focus {
+        outline: none; // Removes outline when focused for a cleaner appearance
+      }
+      &:first-of-type {
+        left: calc(5%);
+      }
+      &:last-of-type {
+        right: calc(5%);
+      } 
+    }
+    & .slideNumber {
+      position: absolute;
+      bottom: 10px; 
+      right: 50%; 
+      transform: translateX(50%); 
+      color: white; 
+      font-size: 16px; 
+      padding: 5px;
+      border-radius: 5px;
+    }
+}
+  

@@ -14,5 +14,16 @@
     & p {
         margin-top: 1rem;
         color: $light-color;
+        text-align: center;
+        @media (min-width: $medium-device-min) {
+            font-size: 24px;
+        }
+        & .breack::after {
+            content: '';
+            display: block;
+            @media (min-width: $medium-device-min) {
+                display: none;
+            }
+        }
     }
 }
