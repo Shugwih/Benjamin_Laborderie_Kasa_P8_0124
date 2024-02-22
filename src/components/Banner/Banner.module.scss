@@ -2,7 +2,7 @@
 
 .banner {
     max-width: 100%; /*340px*/
-    margin: 1rem;
+    //margin: 1rem;
     display: flex;
     justify-content: center;
     position: relative; /*For text*/
@@ -10,9 +10,6 @@
     border-radius: 10px;
         @media (min-width: $medium-device-min) {
             margin: 3.125rem 1rem 0 1rem;
-        }
-        @media (min-width: $large-device) {
-            //margin: 100px 50px 43px 100px;
         }
     &::before { /*Background Opacity*/
         content: '';
@@ -27,12 +24,12 @@
         z-index: -1; /*For background opacity*/
         width: 335px;
         height: 111px;
-        right: 6%;
+        right: 3%;
         top: 6%;
         position: relative;
         object-fit: cover;
         border-radius: 10px;
-        transform: scale(1.7); 
+        transform: scale(1.2); 
             @media (min-width: $medium-device-min) {
                 right: 0;
                 top: 0;

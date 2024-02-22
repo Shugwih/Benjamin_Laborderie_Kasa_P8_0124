@@ -4,20 +4,21 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    max-width: 425px;
+    max-width: 335px;
     margin: auto;
+    padding: 0 5%;
     @media (min-width: $medium-device-min) {
         max-width: 1240px;
     }
     & .home_gallery_container {
         display: flex;
         align-items: center;
-        margin: 2.688rem  0 3.125rem 0;
-        padding: 1rem;
+        padding: 1rem 0;
         @media (min-width: $medium-device-min) {
             background-color: $grey;
             border-radius: 10px;
             margin: 2.688rem 1rem 3.125rem 1rem;
+            padding: 1rem;
         }
         & .home_gallery { /*Style for div (Card container), for card component, go to : Card/Card.module.scss*/
             display: grid;

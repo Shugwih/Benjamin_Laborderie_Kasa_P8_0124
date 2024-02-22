@@ -52,6 +52,10 @@
       font-size: 18px; 
       padding: 5px;
       border-radius: 5px;
+      display: none;
+      @media (min-width: $medium-device-min) {
+        display: block;
+      }
     }
 }
   

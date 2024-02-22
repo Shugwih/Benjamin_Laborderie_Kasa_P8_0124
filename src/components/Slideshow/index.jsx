@@ -7,7 +7,7 @@ function Slideshow({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    setCurrentIndex(0); // Réinitialise l'index à 0 à chaque fois que les images changent
+    setCurrentIndex(0);
   }, [images]);
 
   const previous = () => setCurrentIndex(currentIndex === 0 ? images.length - 1 : currentIndex - 1);

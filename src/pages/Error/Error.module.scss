@@ -7,6 +7,9 @@
     color: $primarycolor;
     & h1 {
         font-size: $h1-error-mobile;
+        @media (min-width: $medium-device-min) {
+            font-size: $h1-error-medium;
+        }
     }
     & h2 {
         text-align: center;
@@ -14,6 +17,10 @@
         & .breack::after {
             content: '';
             display: block;
+            @media (min-width: $medium-device-min) {
+                display: none;
+                font-size: $h2-error-medium;
+            }
         }
     }
     @for $i from 1 through 2 {

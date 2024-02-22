@@ -31,14 +31,17 @@
                     display: flex;
                     font-size: $p-tag-listing-mobile;
                     gap: 10px;
+                    flex-wrap: wrap;
                     & li {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         background-color: $primarycolor;
                         border-radius: 10px;
-                        width: 84px;
+                        min-width: 84px;
                         height: 18px;
+                        padding: 0 5px;
+                        box-sizing: border-box;
                     }
                 }
             }
@@ -88,7 +91,6 @@
             grid-template-columns: repeat(2, 1fr);
         }
         & .collapse_element {
-            background-color: $grey;
             border-radius: 10px;
         }
     }

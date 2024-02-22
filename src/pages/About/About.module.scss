@@ -1,15 +1,44 @@
 @import '../../styles/utilities.scss';
 
 .About {
-    //min-height: calc(100vh - 209px);
-    & .collapse_container {
+    //display: flex;
+    //justify-content: center;
+    //max-width: 425px;
+    width: 100%; //*
+    box-sizing: border-box; //*
+    margin: auto;
+    max-width: 380px;
+    padding: 0 1rem; //*
+    @media (min-width: $medium-device-min) {
         display: flex;
+        justify-content: center;
+        max-width: 1240px;
         flex-direction: column;
-        gap: 1rem;
-        margin: 1rem;
-        & .collapse_element {
-            background-color: $grey;
-            border-radius: 10px;
+    }
+    & .about_container {
+        //max-width: 335px;
+        max-width: 425px;
+            @media (min-width: $medium-device-min) {
+                max-width: 1240px;
+            }
+        & .collapse_container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            //margin: 1rem;
+            margin: 1rem auto;
+            @media (min-width: $medium-device-min) {
+                max-width: 1040px;
+                margin: 1rem auto;
+            };
+            & .collapse_element {
+                background-color: $grey;
+                border-radius: 10px;
+                @media (min-width: $medium-device-min) {
+                    max-width: 1040px;
+                    margin: 0 1rem;
+                }
+            }
         }
     }
 }

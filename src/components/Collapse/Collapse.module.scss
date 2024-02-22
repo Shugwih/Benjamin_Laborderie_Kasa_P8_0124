@@ -1,6 +1,8 @@
 @import '../../styles/utilities.scss';
 
 .collapse {
+    background-color: $grey;
+    border-radius: 10px;
     & .collapseButton {
         background-color: $primarycolor;
         color: $light-color;
