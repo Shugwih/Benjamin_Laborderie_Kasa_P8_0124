@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Benjamin_Laborderie_Kasa_P8_0124/static/css/main.7a9fcdd3.css",
+    "main.js": "/Benjamin_Laborderie_Kasa_P8_0124/static/js/main.55858336.js",
+    "static/js/787.55560dbc.chunk.js": "/Benjamin_Laborderie_Kasa_P8_0124/static/js/787.55560dbc.chunk.js",
+    "static/media/Home_Banner.jpg": "/Benjamin_Laborderie_Kasa_P8_0124/static/media/Home_Banner.19221376a0aa2549c135.jpg",
+    "static/media/About_Banner.jpg": "/Benjamin_Laborderie_Kasa_P8_0124/static/media/About_Banner.e54ae93d36cfba861b65.jpg",
+    "static/media/Main_logo.svg": "/Benjamin_Laborderie_Kasa_P8_0124/static/media/Main_logo.a5c76d8a1dac09edd59db36304e0bcfa.svg",
+    "static/media/Footer_logo.svg": "/Benjamin_Laborderie_Kasa_P8_0124/static/media/Footer_logo.c06beda3372ed237a0b86809c363a0d2.svg",
+    "index.html": "/Benjamin_Laborderie_Kasa_P8_0124/index.html",
+    "main.7a9fcdd3.css.map": "/Benjamin_Laborderie_Kasa_P8_0124/static/css/main.7a9fcdd3.css.map",
+    "main.55858336.js.map": "/Benjamin_Laborderie_Kasa_P8_0124/static/js/main.55858336.js.map",
+    "787.55560dbc.chunk.js.map": "/Benjamin_Laborderie_Kasa_P8_0124/static/js/787.55560dbc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a9fcdd3.css",
+    "static/js/main.55858336.js"
+  ]
+}
