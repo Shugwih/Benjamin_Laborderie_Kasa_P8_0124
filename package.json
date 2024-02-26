@@ -1,7 +1,7 @@
 {
   "name": "kasa",
   "version": "0.1.0",
-  "homepage": "https://shugwih.github.io/Benjamin_Laborderie_Kasa_P8_0124/",
+  "homepage": "https://github.com/Shugwih/Benjamin_Laborderie_Kasa_P8_0124.git",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
