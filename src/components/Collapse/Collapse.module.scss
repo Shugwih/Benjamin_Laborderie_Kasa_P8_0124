@@ -16,6 +16,12 @@
         & span {
             cursor: pointer;
         }
+        & .chevron {
+            transition: transform 0.3s ease-in-out;
+        }
+        & .rotated {
+            transform: rotate(180deg);
+        }
     }
     & ul, p {
         list-style-type: none;
